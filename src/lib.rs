@@ -55,7 +55,7 @@ pub struct MadVRFrame {
 }
 
 impl MadVRMeasurements {
-    pub fn parse_file(path: &Path) -> Result<MadVRMeasurements> {
+    pub fn parse_file<P: AsRef<Path>>(path: P) -> Result<MadVRMeasurements> {
         let file = File::open(path)?;
         let metadata = file.metadata()?;
 
