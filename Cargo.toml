@@ -9,7 +9,7 @@ description = "madVR measurement file library"
 repository = "https://github.com/quietvoid/madvr_parse"
 
 [dependencies]
-anyhow = "1.0.77"
+anyhow = "1.0.95"
 byteorder = "1.5.0"
 
 [lib]
