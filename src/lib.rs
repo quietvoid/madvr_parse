@@ -1,9 +1,9 @@
-use anyhow::{bail, ensure, format_err, Result};
+use anyhow::{Result, bail, ensure, format_err};
 use std::fs::File;
 use std::io::{BufReader, Cursor, Read, Write};
 use std::path::Path;
 
-use byteorder::{ReadBytesExt, WriteBytesExt, LE};
+use byteorder::{LE, ReadBytesExt, WriteBytesExt};
 
 mod utils;
 use utils::nits_to_pq;
